@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athlete Manager — Support</title>
+<style>
+  :root { --bg:#000; --card:#1c1c1e; --accent:#0a84ff; --text:#f2f2f7; --muted:#8e8e93; --border:#2c2c2e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); line-height:1.75; font-size:16px;
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans CJK JP","Noto Sans KR","Noto Sans SC","Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  header.site { display:flex; align-items:center; gap:12px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+  .app-name { font-size:18px; font-weight:700; }
+  .app-name span { color:var(--accent); }
+  .langbar { position:sticky; top:0; background:var(--bg); padding:14px 0; display:flex; flex-wrap:wrap; gap:8px;
+    border-bottom:1px solid var(--border); margin-bottom:28px; z-index:10; }
+  .lang-btn { background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:999px;
+    padding:7px 16px; font-size:14px; cursor:pointer; font-family:inherit; transition:all .15s ease; }
+  .lang-btn:hover { border-color:var(--accent); }
+  .lang-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+  .lang-btn:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .page { display:none; }
+  .page.active { display:block; }
+  h1 { font-size:28px; margin:0 0 12px; }
+  h2 { font-size:19px; margin:36px 0 12px; }
+  h3 { font-size:16px; margin:20px 0 4px; }
+  .intro { color:var(--text); }
+  .faq { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  .faq h3 { margin:0 0 6px; }
+  .faq p { margin:0; color:var(--muted); }
+  a { color:var(--accent); }
+  .pp { margin-top:40px; padding-top:20px; border-top:1px solid var(--border); }
+  footer.site { margin-top:48px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; text-align:center; }
+  @media (prefers-reduced-motion:reduce) { .lang-btn { transition:none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site"><div class="app-name">Athlete <span>Manager</span></div></header>
+    <nav class="langbar" aria-label="Language">
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+    </nav>
+      <section class="page" data-lang="ja">
+        <h1>サポート</h1>
+        <p class="intro">Athlete Manager をご利用いただきありがとうございます。陸上選手のための自己管理アプリです。ご質問・不具合のご報告・ご要望は、下記の連絡先までお気軽にお問い合わせください。</p>
+        <h2>お問い合わせ</h2>
+        <p>メールでのお問い合わせ：<br><a href="mailto:athletemanager378@gmail.com">athletemanager378@gmail.com</a></p>
+        <h2>よくある質問</h2>
+        <div class="faq"><h3>アカウントを削除したいです</h3><p>アプリ内のプロフィール画面にある「退会する」から、アカウントと関連するすべてのデータを削除できます。削除後の復元はできません。</p></div>
+        <div class="faq"><h3>対応言語を教えてください</h3><p>日本語・英語・韓国語・中国語に対応しています。アプリ内の言語設定から切り替えられます。</p></div>
+        <div class="faq"><h3>動作環境を教えてください</h3><p>iPhone（iOS）に対応しています。</p></div>
+        <p class="pp"><a href="https://raitin5973-cmyk.github.io/privacy1/">プライバシーポリシー</a></p>
+      </section>
+      <section class="page" data-lang="en">
+        <h1>Support</h1>
+        <p class="intro">Thank you for using Athlete Manager, a self-management app for track and field athletes. For questions, bug reports, or feature requests, please feel free to contact us at the address below.</p>
+        <h2>Contact</h2>
+        <p>Contact us by email:<br><a href="mailto:athletemanager378@gmail.com">athletemanager378@gmail.com</a></p>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq"><h3>I want to delete my account</h3><p>You can delete your account and all related data from "Delete account" on the profile screen in the app. Data cannot be restored after deletion.</p></div>
+        <div class="faq"><h3>What languages are supported?</h3><p>Japanese, English, Korean, and Chinese are supported. You can switch languages in the app settings.</p></div>
+        <div class="faq"><h3>What devices are supported?</h3><p>The app supports iPhone (iOS).</p></div>
+        <p class="pp"><a href="https://raitin5973-cmyk.github.io/privacy1/">Privacy Policy</a></p>
+      </section>
+      <section class="page" data-lang="ko">
+        <h1>지원</h1>
+        <p class="intro">Athlete Manager를 이용해 주셔서 감사합니다. 육상 선수를 위한 자기 관리 앱입니다. 질문, 버그 신고, 요청 사항은 아래 연락처로 편하게 문의해 주십시오.</p>
+        <h2>문의</h2>
+        <p>이메일 문의：<br><a href="mailto:athletemanager378@gmail.com">athletemanager378@gmail.com</a></p>
+        <h2>자주 묻는 질문</h2>
+        <div class="faq"><h3>계정을 삭제하고 싶습니다</h3><p>앱 내 프로필 화면의 "탈퇴하기"에서 계정과 관련된 모든 데이터를 삭제할 수 있습니다. 삭제 후에는 복원할 수 없습니다.</p></div>
+        <div class="faq"><h3>지원 언어를 알려 주세요</h3><p>일본어, 영어, 한국어, 중국어를 지원합니다. 앱 내 언어 설정에서 전환할 수 있습니다.</p></div>
+        <div class="faq"><h3>지원 기기를 알려 주세요</h3><p>iPhone(iOS)을 지원합니다.</p></div>
+        <p class="pp"><a href="https://raitin5973-cmyk.github.io/privacy1/">개인정보 처리방침</a></p>
+      </section>
+      <section class="page" data-lang="zh">
+        <h1>支持</h1>
+        <p class="intro">感谢您使用 Athlete Manager，这是一款面向田径运动员的自我管理应用。如有问题、错误报告或功能建议，请随时通过以下联系方式与我们联系。</p>
+        <h2>联系方式</h2>
+        <p>通过电子邮件联系：<br><a href="mailto:athletemanager378@gmail.com">athletemanager378@gmail.com</a></p>
+        <h2>常见问题</h2>
+        <div class="faq"><h3>我想删除账户</h3><p>您可以通过应用内个人资料页面的"注销账户"删除账户及所有相关数据。删除后无法恢复。</p></div>
+        <div class="faq"><h3>支持哪些语言？</h3><p>支持日语、英语、韩语和中文。可在应用内的语言设置中切换。</p></div>
+        <div class="faq"><h3>支持哪些设备？</h3><p>本应用支持 iPhone（iOS）。</p></div>
+        <p class="pp"><a href="https://raitin5973-cmyk.github.io/privacy1/">隐私政策</a></p>
+      </section>
+    <footer class="site">Athlete Manager · Support</footer>
+  </div>
+<script>
+  (function(){
+    var btns=document.querySelectorAll('.lang-btn'), secs=document.querySelectorAll('.page');
+    function show(l){
+      btns.forEach(function(b){b.classList.toggle('active',b.dataset.lang===l);});
+      secs.forEach(function(s){s.classList.toggle('active',s.dataset.lang===l);});
+      document.documentElement.lang=l;
+    }
+    btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.lang);});});
+    var sys=(navigator.language||'ja').slice(0,2), sup=['ja','en','ko','zh'];
+    show(sup.indexOf(sys)>=0?sys:'ja');
+  })();
+</script>
+</body>
+</html>
